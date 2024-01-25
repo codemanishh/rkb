@@ -1,14 +1,25 @@
 import React from 'react'
+import './style.css'
+import img1 from './Logo/mainlogo.png';
+import img2 from './Pictures/design.png'
+import img3 from './Pictures/Mobile.png'
+import img4 from './Pictures/Web.png'
+import img5 from './Pictures/brand names.png'
+import img6 from './Pictures/2.png'
+import img7 from './Pictures/tick mark.png'
+import img8 from './Pictures/tick mark.png'
+import img9 from './Logo/Frame.png'
+
 
 function Homepage() {
     return (
-        <div>
+        <div className='body'>
             {/* ..................... nevigation and div-1 in this seciton ................  */}
             <div className="nav">
                 <nav>
                     <div className="nav-1">
                         <div className="forlogo">
-                            <img src="./Logo/mainlogo.png" style={{ width: '48px', height: '38px' }} alt="main logo" />
+                            <img src={img1} style={{ width: '48px', height: '38px' }} alt="main logo" />
                             <div className="noc">ANTHROPE</div>
                         </div>
                         <ul>
@@ -39,23 +50,23 @@ function Homepage() {
                         </div>
                     </div>
                     <div className="rel">
-                        <img className="newrel" src="./Pictures/design.png" style={{
+                        <img className="newrel" src={img2} style={{
                             width: '56%', /* marginTop: '-127px', */
                             top: 0, right: '0px'
                         }} alt="playButton" />
                         <div className="newimg2" style={{ zIndex: 4 }}>
                             <div style={{ position: 'absolute', right: '400px', top: '154px' }}>
-                                <img src="./Pictures/Mobile.png" style={{ width: '100%' }} alt="" />
+                                <img src={img3} style={{ width: '100%' }} alt="" />
                             </div>
                             <div>
-                                <img src="./Pictures/Web.png" style={{ width: '100%' }} alt="" />
+                                <img src={img4} style={{ width: '100%' }} alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* .............................. new div in div-1 ................  */}
                 <div style={{ padding: '132px' }}>
-                    <img src="./Pictures/brand names.png" alt="" />
+                    <img src={img5} alt="" />
                 </div>
             </div>
             {/* new div started */}
@@ -77,7 +88,7 @@ function Homepage() {
                 </div>
                 <div className="divm3">
                     <div>
-                        <img src="./Pictures/2.png" alt="" />
+                        <img src={img6} alt="" />
                     </div>
                     <div className="divm2ba-1">
                         <div style={{ color: 'white' }} />
@@ -92,7 +103,7 @@ function Homepage() {
                         </div>
                         <div className="boxes">
                             <div className="box">
-                                <div><img src="./Pictures/tick mark.png" alt="" /></div>
+                                <div><img src={img7} alt="" /></div>
                                 <div className style={{ fontWeight: 1000 }}>
                                     Real-time Updates:
                                 </div>
@@ -101,7 +112,7 @@ function Homepage() {
                                 </div>
                             </div>
                             <div className="box">
-                                <div><img src="./Pictures/tick mark.png" alt="" /></div>
+                                <div><img src={img8} alt="" /></div>
                                 <div className style={{ fontWeight: 1000 }}>
                                     Free ATS Integration:
                                 </div>
@@ -110,7 +121,7 @@ function Homepage() {
                                 </div>
                             </div>
                             <div className="box">
-                                <div><img src="./Pictures/tick mark.png" alt="" /></div>
+                                <div><img src={img8} alt="" /></div>
                                 <div className style={{ fontWeight: 1000 }}>
                                     Customizable Filters:
                                 </div>
@@ -119,7 +130,7 @@ function Homepage() {
                                 </div>
                             </div>
                             <div className="box">
-                                <div><img src="./Pictures/tick mark.png" alt="" /></div>
+                                <div><img src={img8} alt="" /></div>
                                 <div className style={{ fontWeight: 1000 }}>
                                     Ranking Algorithm:s:
                                 </div>
@@ -140,7 +151,7 @@ function Homepage() {
             {/* new </div> */}
             <div>
                 <div>
-                    <img src="./Logo/Frame.png" style={{ width: '100%' }} />
+                    <img src={img9} style={{ width: '100%' }} />
                 </div>
             </div>
             <div className="lastdiv">
